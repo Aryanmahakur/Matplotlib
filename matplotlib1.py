@@ -66,9 +66,36 @@ from matplotlib import style
 # plt.plot(stockc,label="company3")
 # plt.legend(loc="upper left")
 # plt.show()
-style.use("dark_background")
-votes=[10,2,4,90,35]
-people=["a","b","c","d","e"]
-plt.pie(votes,labels=None)
-plt.legend(labels=people)
+# style.use("dark_background")
+# votes=[10,2,4,90,35]
+# people=["a","b","c","d","e"]
+# plt.pie(votes,labels=None)
+# plt.legend(labels=people)
+# plt.show()
+# x1,y1=np.random.random(100),np.random.random(100)
+# x2,y2=np.arange(100),np.random.random(100)
+# plt.figure(1)
+# plt.scatter(x1,y1)
+# plt.figure(2)
+# plt.plot(x2,y2)
+# plt.show()
+
+
+x = np.arange(1, 101)  # Start from 1 to avoid log(0) error
+
+fig, axs = plt.subplots(2, 2, figsize=(10, 6))  # Correct subplot function
+
+axs[0, 0].plot(x, np.sin(x))
+axs[0, 0].set_title("Sine Wave")
+
+axs[0, 1].plot(x, np.cos(x))
+axs[0, 1].set_title("Cosine Wave")
+
+axs[1, 0].plot(x, np.random.random(100))
+axs[1, 0].set_title("Random Function")
+
+axs[1, 1].plot(x, np.log(x))
+axs[1, 1].set_title("Log Function")
+axs[1,1].set_xlabel("test")
+plt.tight_layout()  # Adjusts spacing between plots
 plt.show()
