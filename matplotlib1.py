@@ -49,12 +49,19 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #customization
-years=[2010,2011,2012,2014,2015]
-income=[50,60,50,80,70]
-income_ticks=list(range(50_81_2))
-plt.plot(years,income,)
-plt.title("income of a person(in usd)",fontsize=30,fontname="freeserif")
-plt.xlabel("year")
-plt.ylabel("income(in usd)")
-plt.yticks(income_ticks,[f"{x}k USD" for x in income_ticks])
+# years=[2010,2011,2012,2014,2015]
+# income=[50,60,50,80,70]
+# income_ticks=list(range(50_81_2))
+# plt.plot(years,income,)
+# plt.title("income of a person(in usd)",fontsize=30,fontname="freeserif")
+# plt.xlabel("year")
+# plt.ylabel("income(in usd)")
+# plt.yticks(income_ticks,[f"{x}k USD" for x in income_ticks])
+# plt.show()
+stocka=[100,105,201,111,555]
+stockb=[201,43,54,23,50]
+stockc=[100,234,50,20,10]
+plt.plot(stocka)
+plt.plot(stockb)
+plt.plot(stockc)
 plt.show()
