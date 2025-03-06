@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import style
+import random
 #scatter plot
 # x=np.random.rand(50)*100
 # y=np.random.rand(50)*100
@@ -102,11 +103,29 @@ from matplotlib import style
 # #fig.savefig("fourplots.png" dpi=300,transparent=True,bbox_inches="tight",pad_inches=20.2)
 # plt.show()
 
-ax=plt.axes(projection="3d")
-x=np.arange(0,50,0.1)
-y=np.sin(x)
-z=np.cos(x+y)
-ax.plot(x,y,z)
-ax.set_title("3d plot")
-ax.set_xlabel("test")
+# ax=plt.axes(projection="3d")
+# x=np.arange(-5,5,0.1)
+# y=np.arange(-5,5,0.1)
+# x,y=np.meshgrid(x,y)
+# z=np.sin(x)*np.cos(y)
+# ax.plot_surface(x,y,z,cmap="spectral")
+# ax.set_title("3d plot")
+# ax.set_xlabel("test")
+# ax.view_init(azim=0,elev=90)
+# plt.show()
+# x=np.arange(0,50,0.1)
+# y=np.sin(x)
+# z=np.cos(x+y)
+# ax.plot(x,y,z)
+# ax.set_title("3d plot")
+# ax.set_xlabel("test")
+# plt.show()
+#animation
+
+head_tails=[0,0]
+for _ in range(100000):
+    head_tails[random.randint(0,1)]+=1
+
+plt.bar(["heads","tails"],head_tails,color=["red","blue"])
+plt.pause(0.001)
 plt.show()
