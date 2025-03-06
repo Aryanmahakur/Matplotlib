@@ -81,22 +81,32 @@ from matplotlib import style
 # plt.show()
 
 
-x = np.arange(1, 101)  # Start from 1 to avoid log(0) error
+# x = np.arange(1, 101)  # Start from 1 to avoid log(0) error
 
-fig, axs = plt.subplots(2, 2, figsize=(10, 6))  # Correct subplot function
+# fig, axs = plt.subplots(2, 2, figsize=(10, 6))  # Correct subplot function
 
-axs[0, 0].plot(x, np.sin(x))
-axs[0, 0].set_title("Sine Wave")
+# axs[0, 0].plot(x, np.sin(x))
+# axs[0, 0].set_title("Sine Wave")
 
-axs[0, 1].plot(x, np.cos(x))
-axs[0, 1].set_title("Cosine Wave")
+# axs[0, 1].plot(x, np.cos(x))
+# axs[0, 1].set_title("Cosine Wave")
 
-axs[1, 0].plot(x, np.random.random(100))
-axs[1, 0].set_title("Random Function")
+# axs[1, 0].plot(x, np.random.random(100))
+# axs[1, 0].set_title("Random Function")
 
-axs[1, 1].plot(x, np.log(x))
-axs[1, 1].set_title("Log Function")
-axs[1,1].set_xlabel("test")
-plt.tight_layout()  # Adjusts spacing between plots
-fig.suptitle("four plots")
+# axs[1, 1].plot(x, np.log(x))
+# axs[1, 1].set_title("Log Function")
+# axs[1,1].set_xlabel("test")
+# plt.tight_layout()  # Adjusts spacing between plots
+# fig.suptitle("four plots")
+# #fig.savefig("fourplots.png" dpi=300,transparent=True,bbox_inches="tight",pad_inches=20.2)
+# plt.show()
+
+ax=plt.axes(projection="3d")
+x=np.arange(0,50,0.1)
+y=np.sin(x)
+z=np.cos(x+y)
+ax.plot(x,y,z)
+ax.set_title("3d plot")
+ax.set_xlabel("test")
 plt.show()
