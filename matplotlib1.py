@@ -19,7 +19,21 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 #bar plot
-x=["c++","c","java","python"]
-y=[10,20,30,40]
-plt.bar(x,y)
+# x=["c++","c","java","python"]
+# y=[10,20,10,40]
+# plt.bar(x,y,color="yellow",align="center",width=0.5,edgecolor="red",lw=2)
+# plt.show()
+
+#histogram
+# ages = np.random.normal(30, 5, 1000)
+# # plt.hist(ages, bins=[ages.min(), 18, 21, ages.max()], color="yellow", edgecolor="red", lw=2)
+# # plt.show()
+# plt.hist(ages, bins=10, color="yellow", edgecolor="red", lw=2,cumulative=True)
+# plt.show()
+
+#pie chart
+langs=["c++","c","java","python"]
+votes=[10,20,10,40]
+explode=[0,0,0,0.1]
+plt.pie(votes,labels=langs,explode=explode)
 plt.show()
