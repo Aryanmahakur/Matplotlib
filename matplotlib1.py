@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+from matplotlib import style
 #scatter plot
 # x=np.random.rand(50)*100
 # y=np.random.rand(50)*100
@@ -58,10 +58,17 @@ import matplotlib.pyplot as plt
 # plt.ylabel("income(in usd)")
 # plt.yticks(income_ticks,[f"{x}k USD" for x in income_ticks])
 # plt.show()
-stocka=[100,105,201,111,555]
-stockb=[201,43,54,23,50]
-stockc=[100,234,50,20,10]
-plt.plot(stocka)
-plt.plot(stockb)
-plt.plot(stockc)
+# stocka=[100,105,201,111,555]
+# stockb=[201,43,54,23,50]
+# stockc=[100,234,50,20,10]
+# plt.plot(stocka,label="company1")
+# plt.plot(stockb,label="company2")
+# plt.plot(stockc,label="company3")
+# plt.legend(loc="upper left")
+# plt.show()
+style.use("dark_background")
+votes=[10,2,4,90,35]
+people=["a","b","c","d","e"]
+plt.pie(votes,labels=None)
+plt.legend(labels=people)
 plt.show()
