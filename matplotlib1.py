@@ -98,4 +98,5 @@ axs[1, 1].plot(x, np.log(x))
 axs[1, 1].set_title("Log Function")
 axs[1,1].set_xlabel("test")
 plt.tight_layout()  # Adjusts spacing between plots
+fig.suptitle("four plots")
 plt.show()
