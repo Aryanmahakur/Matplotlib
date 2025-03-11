@@ -36,7 +36,7 @@ weight = [40, 50, 60, 70, 80]
 
 plt.barh(years,weight,align="center")
 plt.show()
-
+s
 #histogram
 
 years = [2005, 2006, 2007, 2008, 2009]
