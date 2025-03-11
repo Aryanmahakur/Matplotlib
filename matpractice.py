@@ -36,6 +36,9 @@ weight = [40, 50, 60, 70, 80]
 
 plt.barh(years,weight,align="center")
 plt.show()
+git add .
+git commit -m "uf"
+git push origin main
 s
 #histogram
 
