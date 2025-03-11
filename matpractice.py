@@ -39,7 +39,7 @@ plt.show()
 git add .
 git commit -m "uf"
 git push origin main
-
+s
 #histogram
 
 years = [2005, 2006, 2007, 2008, 2009]
