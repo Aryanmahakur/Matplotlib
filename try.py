@@ -2,4 +2,3 @@
 name=input("enter your name")
 print("hello",name)
 name1="aryan"
-print("hello",name1)
