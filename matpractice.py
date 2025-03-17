@@ -46,4 +46,3 @@ years = [2005, 2006, 2007, 2008, 2009]
 weight = [40, 50, 60, 70, 80]
 plt.hist(years,weight,bins=5)
 plt.show()
-abcd
